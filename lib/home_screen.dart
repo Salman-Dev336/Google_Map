@@ -28,6 +28,9 @@ class _HomeScreenState extends State<HomeScreen> {
       ),
       body: GoogleMap(
         initialCameraPosition: _kGooglePlex,
+        mapType: MapType.normal,
+        compassEnabled: true,
+        myLocationEnabled: true,
         onMapCreated: (GoogleMapController controller){
           _controller.complete(controller);
         },
