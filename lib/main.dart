@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:google_map/home_screen.dart';
 
 void main(){
   runApp(const MyApp());
@@ -11,11 +12,12 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      debugShowCheckedModeBanner: false,
       title: 'flutter Demo',
       theme: ThemeData(
         primarySwatch: Colors.lightGreen,
       ), 
-     
+     home: HomeScreen(),
     );
   }
 }
